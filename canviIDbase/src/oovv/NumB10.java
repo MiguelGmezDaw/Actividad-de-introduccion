@@ -17,17 +17,28 @@ public class NumB10 {
 
     private int num;
 
+    /**
+     * constructor de NumB10. número en base 10
+     *
+     * @param num valor del número en base 10
+     */
+
     public NumB10(int num) {
         this.num = num;
     }
 
+    /**
+     * assigna el valor al número.
+     *
+     * @param num valor a assignar
+     */
     public void setNum(int num) {
         this.num = num;
     }
 
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return num; // (error 1)
     }
 
 }
