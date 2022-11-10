@@ -28,9 +28,10 @@ public class CanviIDbase {
         if (base < 2 || base > 24) {
             throw new ArithmeticException("la base va de 2 a 24");
         }
-        String digits = "0123456789ABCDEFGHIJKLMN; // (error 2)
+        String digits = "0123456789ABCDEFGHIJKLMN"; // (error 2)
         String cad = "";
-        while (num > "O") { // (error 3)
+        int num=0;
+        while (num > 0) {
             cad = cad + digits.charAt(num % base);
             num = num / base;
         }
@@ -44,13 +45,13 @@ public class CanviIDbase {
      * @return la cadena invertida
      */
     private String alReves(String cad) {
-        String reves = ; // (error 4)
+        String reves ="" ;
         int i = cad.length() - 1;
         while (i >= 0) {
             reves = reves + cad.charAt(i);
             i--;
-        }; // (error 5)
-        return reve; // (error 6)
+        }
+        return reves;
     }
 
     /**
@@ -60,7 +61,8 @@ public class CanviIDbase {
      * @throws ArithmeticException si el número no està entre 1 i 9999
      */
     public String canviaARoma() throws ArithmeticException {
-        if (num < 1 || num > "9999") { // (error 7)
+        int num=0;
+        if (num < 1 || num > 9999) { // (error 7)
             throw new ArithmeticException("sols per a números entre 1 i 9999");
         }
         String[][] caracters = { // blocs de caràcters
@@ -96,7 +98,7 @@ public class CanviIDbase {
                 case 2:
                     digitR = digitR + caracters[iBloc][0];
                 case 1:
-                    digitR == digitR + caracters[iBloc][0]; // (error 8)
+                    digitR.equals(digitR + caracters[iBloc][0]); // (error 8)
                     break;
             }
             numR = numR + digitR; // afegeix el dígit al número romà

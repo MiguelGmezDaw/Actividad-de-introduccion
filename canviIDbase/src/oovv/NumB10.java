@@ -38,7 +38,8 @@ public class NumB10 {
 
     @Override
     public String toString() {
-        return num; // (error 1)
+        String num ="";
+        return num;
     }
 
 }
