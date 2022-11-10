@@ -15,4 +15,19 @@ import java.nio.Buffer;
  */
 public class NumB10 {
 
+    private int num;
+
+    public NumB10(int num) {
+        this.num = num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
