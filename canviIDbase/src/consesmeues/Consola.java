@@ -15,17 +15,23 @@ import java.io.InputStreamReader;
 public class Consola {
 
     /**
+     * llig una cadena de text de teclat.
      *
-     * @return @throws IOException
+     * @return la cadena llegida
+     * @throws IOException
      */
+
     public static String lligText() throws IOException {
         BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
         return lector.readLine();
     }
 
     /**
+     * llig un enter de teclat. el procés de lectura es repeteix mentre el valor
+     * no siga un enter
      *
-     * @return @throws IOException
+     * @return el número llegit
+     * @throws IOException
      */
     public static int lligEnter() throws IOException {
         BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
